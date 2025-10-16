@@ -37,8 +37,9 @@
       "custom/cpuinfo",
       
     //   "custom/sensorsinfo",
-    //   "custom/swaync",
-      "custom/hyde-menu"
+      "custom/swaync",
+      "custom/hyde-menu",
+       "custom/power"
     ]
   }
-}c
+}
