@@ -1,0 +1,17 @@
+/* User custom styles */
+
+@define-color bar-bg rgba(31,30,46,0);        /* Keep transparent */
+@define-color main-bg rgba(31,30,46,0);       /* Change to 0 - removes normal bubbles */
+@define-color main-fg rgba(175,170,240,0.8);  /* Keep text color */
+@define-color wb-act-bg rgba(212,200,216,0.4); /* Keep this - need active background! */
+@define-color wb-act-fg rgba(242,204,255,1);  /* Keep active text color */
+@define-color wb-hvr-bg rgba(81,75,125,0);    /* Change to 0 - removes hover bubbles */
+@define-color wb-hvr-fg rgba(184,170,240,0.8); /* Keep hover text color */
+
+
+
+/* GENERAL */
+* {
+  font-size: 9px;
+  min-height: 0;
+}

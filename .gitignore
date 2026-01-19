@@ -1,0 +1,11 @@
+# Ignore cache and temporary files
+**/*.log
+**/*.cache
+**/Cache/
+**/cache/
+
+# Ignore sensitive data
+**/*history
+**/*_history
+**/cookies
+**/tokens
