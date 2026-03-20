@@ -25,4 +25,4 @@
     class     = "console-dropdown"
     command   = "[term_with_class] console-dropdown"
     max_size  = "90% 100%"
-    size      = "75% 60%"
+    size      = "55% 45%"
