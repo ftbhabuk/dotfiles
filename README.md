@@ -1,61 +1,59 @@
-# Hyprland Dotfiles
+# Arch Hyprland Dotfiles
 
-My  Hyprland configuration files I'm using.
+This repo tracks my actual Arch Linux desktop environment, centered around Hyprland and a HyDE-based setup. It is not just a window manager config dump. It includes the shell, theming, session glue, terminal setup, utility scripts, and lockscreen tweaks I use to keep the whole environment consistent.
 
-## Contents
+## Preview
 
-**Window Manager**
-- hypr/ - Hyprland configuration
-- waybar/ - Status bar
-- rofi/ - Application launcher
-- wlogout/ - Logout menu
-- dunst/ - Notifications
-- uwsm/ - Session manager
+<p align="center">
+  <img src="assets/previews/desktop1.png" alt="Desktop preview 1" width="49%" />
+  <img src="assets/previews/desktop2.png" alt="Desktop preview 2" width="49%" />
+</p>
 
-**Terminal & Shell**
-- kitty/ - Terminal emulator
-- zsh/ - Shell configuration
-- starship/ - Prompt
-- fastfetch/ - System info
-- btop/ - System monitor
-- vim/ - Editor
+## What is in here
 
-**Theming**
-- gtk-3.0/, gtk-4.0/ - GTK themes
-- qt5ct/, qt6ct/ - Qt configuration
-- Kvantum/ - Qt theme engine
-- nwg-look/ - GTK settings
+- `hypr/`, `waybar/`, `rofi/`, `wlogout/`: compositor and desktop UI
+- `kitty/`, `zsh/`, `starship/`, `vim/`: terminal, shell, prompt, editor
+- `gtk-3.0/`, `qt5ct/`, `qt6ct/`, `Kvantum/`, `nwg-look/`: theming and toolkit config
+- `uwsm/`: session startup and environment handling
+- `scripts/` and helper scripts in repo root: machine-specific utilities and workflow helpers
+- `fastfetch/`, `btop/`: terminal utilities I keep configured with the rest of the environment
 
-**Scripts**
-- create-claude.sh
-- create-grok.sh
-- fix_thermal.sh
+## Notes
 
-## Installation
+- This repo is for my own environment first, so some paths and choices are intentionally personal.
+- The Hyprlock setup includes a custom fingerprint-enabled layout alongside the regular HyDE lockscreen flow.
+- Some directories exist because Linux theming is split across GTK, Qt, shell, and session tools, not because each one is used directly every day.
 
-Backup your existing configs first:
-```bash
-mkdir -p ~/.config-backup
-cp -r ~/.config/{hypr,waybar,rofi,kitty,zsh} ~/.config-backup/
-```
+## Setup style
 
-Copy configurations:
-```bash
-cp -r ./* ~/.config/
-chmod +x create-*.sh fix_thermal.sh
-```
+The goal here is a clean Hyprland desktop with:
 
-## Dependencies
+- HyDE-style visuals and lockscreen flow
+- Waybar and Rofi for daily navigation
+- a themed shell and terminal environment
+- utility scripts for system/workflow shortcuts
+- dotfiles that reflect the whole environment, not only one app
 
-Core packages needed:
-```bash
-hyprland waybar rofi dunst kitty zsh starship fastfetch btop vim
-qt5ct qt6ct kvantum nwg-gtk-settings wlogout uwsm
-```
+## Using the repo
 
-Install on Arch:
-```bash
-sudo pacman -S hyprland waybar rofi dunst kitty zsh starship fastfetch btop vim qt5ct qt6ct kvantum wlogout uwsm
-yay -S nwg-look
-```
+If you want to reuse parts of it, copy only what matches your own setup. The safest way is to take individual folders such as `hypr/`, `waybar/`, `rofi/`, `kitty/`, or `zsh/` instead of blindly copying the whole repo.
 
+If you are cloning this for a similar Arch + Hyprland setup, expect to adjust:
+
+- usernames and home-directory paths
+- monitor/workstation-specific preferences
+- package choices for GTK/Qt theming
+- machine-specific helper scripts
+
+## Why the extra folders are here
+
+This repo includes more than Hyprland because the desktop experience on Linux is split across multiple layers:
+
+- compositor config
+- shell config
+- terminal config
+- theming/toolkit config
+- session startup config
+- small automation scripts
+
+That is why folders like `Kvantum`, `qt5ct`, `qt6ct`, `gtk-3.0`, `uwsm`, and `zsh` live beside the Hyprland config instead of somewhere else.
