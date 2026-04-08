@@ -21,7 +21,7 @@ This repo tracks my actual Arch Linux desktop environment, centered around Hyprl
 ## Notes
 
 - This repo is for my own environment first, so some paths and choices are intentionally personal.
-- The Hyprlock setup includes a custom fingerprint-enabled layout alongside the regular HyDE lockscreen flow.
+- The Hyprlock setup uses the regular HyDE lockscreen flow with fingerprint support enabled through `hypr/hyprlock.conf` and `.local/share/hyde/hyprlock.conf`.
 - Some directories exist because Linux theming is split across GTK, Qt, shell, and session tools, not because each one is used directly every day.
 
 ## Setup style
@@ -45,15 +45,3 @@ If you are cloning this for a similar Arch + Hyprland setup, expect to adjust:
 - package choices for GTK/Qt theming
 - machine-specific helper scripts
 
-## Why the extra folders are here
-
-This repo includes more than Hyprland because the desktop experience on Linux is split across multiple layers:
-
-- compositor config
-- shell config
-- terminal config
-- theming/toolkit config
-- session startup config
-- small automation scripts
-
-That is why folders like `Kvantum`, `qt5ct`, `qt6ct`, `gtk-3.0`, `uwsm`, and `zsh` live beside the Hyprland config instead of somewhere else.
