@@ -1,6 +1,6 @@
 /* User custom styles */
 
-@define-color bar-bg rgba(31,30,46,0);        /* Keep transparent */
+@define-color bar-bg rgba(31,30,46,1);        /* Keep transparent 31,30,46,0 */
 @define-color main-bg rgba(31,30,46,0);       /* Change to 0 - removes normal bubbles */
 @define-color main-fg rgba(175,170,240,0.8);  /* Keep text color */
 @define-color wb-act-bg rgba(212,200,216,0.4); /* Keep this - need active background! */
@@ -14,4 +14,23 @@
 * {
   font-size: 9px;
   min-height: 0;
+}
+
+/* Workspace buttons inside pill - no extra spacing */
+#workspaces {
+  /* margin: 0px; */
+  padding: 0em;
+}
+#workspaces button {
+  padding: 0 0.1em;
+  margin: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+#workspaces button.active {
+  padding: 0 0.2em;
+  margin: 4;
+  /* background: transparent; */
+  color: @main-fg;
 }

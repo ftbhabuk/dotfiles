@@ -12,9 +12,10 @@
   "modules-left": ["group/pill#left"],
   "group/pill#left": {
     "orientation": "inherit",
-    "modules": ["cpu", "memory",
+    "modules": [ "cpu", "memory",
     // "custom/gpuinfo","custom/cpuinfo", 
-    "wlr/taskbar", "custom/spotify"]
+    "wlr/taskbar", "custom/spotify"
+  ]
   },
   "modules-center": ["group/pill#center"],
   "group/pill#center": {
@@ -41,5 +42,10 @@
       "custom/hyde-menu",
        "custom/power"
     ]
-  }
+  },
+// "custom/spotify": {
+//     "exec": "/usr/bin/python3 /home/bbook/.local/lib/hyde/mediaplayer.py",
+//     "return-type": "json",
+//     "format": "{}"
+// }
 }

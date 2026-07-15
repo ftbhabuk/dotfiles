@@ -1,6 +1,7 @@
 # Ignore cache and temporary files
 **/*.log
 **/*.cache
+**/*.zwc
 **/Cache/
 **/cache/
 
@@ -9,3 +10,6 @@
 **/*_history
 **/cookies
 **/tokens
+
+# Ignore auto-generated zsh completion dumps
+zsh/.zcompdump*

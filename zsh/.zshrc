@@ -41,3 +41,10 @@
 export EDITOR=code
 
 # unset -f command_not_found_handler # Uncomment to prevent searching for commands not found in package manager
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/bbook/.bun/_bun" ] && source "/home/bbook/.bun/_bun"
