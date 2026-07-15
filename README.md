@@ -11,18 +11,18 @@ This repo tracks my actual Arch Linux desktop environment, centered around Hyprl
 
 ## What is in here
 
-- `hypr/`, `waybar/`, `rofi/`, `wlogout/`: compositor and desktop UI
-- `kitty/`, `zsh/`, `starship/`, `vim/`: terminal, shell, prompt, editor
-- `gtk-3.0/`, `qt5ct/`, `qt6ct/`, `Kvantum/`, `nwg-look/`: theming and toolkit config
+- `hypr/`, `waybar/`, `rofi/`: compositor and desktop UI
+- `kitty/`, `zsh/`, `starship/`: terminal, shell, prompt
+- `gtk-3.0/`, `qt5ct/`, `qt6ct/`, `nwg-look/`: theming and toolkit config
 - `uwsm/`: session startup and environment handling
 - `scripts/` and helper scripts in repo root: machine-specific utilities and workflow helpers
-- `fastfetch/`, `btop/`: terminal utilities I keep configured with the rest of the environment
+- `fastfetch/`: terminal system info utility
 
 ## Notes
 
 - This repo is for my own environment first, so some paths and choices are intentionally personal.
 - The Hyprlock setup uses the regular HyDE lockscreen flow with fingerprint support enabled through `hypr/hyprlock.conf` and `.local/share/hyde/hyprlock.conf`.
-- Some directories exist because Linux theming is split across GTK, Qt, shell, and session tools, not because each one is used directly every day.
+- Only personally customized configs are tracked — HyDE-managed defaults (btop, vim, dunst, wlogout, Kvantum, etc.) are left out.
 
 ## Setup style
 
